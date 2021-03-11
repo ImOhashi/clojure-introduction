@@ -13,6 +13,11 @@
 (defn valor-descontado
   "Retorna o valor com desconto de 10%"
   [valor-bruto]
-  (* valor-bruto (- 1 0.10)))
+  (let [desconto 0.10]
+    (println "Calculando o valor de" desconto)
+    (* valor-bruto (- 1 desconto))))
 
 (valor-descontado 1000)
+
+(class 90.0)
+(class 90N)
